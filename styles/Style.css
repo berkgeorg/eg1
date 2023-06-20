@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root{
+  --backgroundColor: rgb(248, 248, 255);
+  --primaryColor:#2e2929;
+  --primaryTextColor: #423b3b;
+
+  --headlineBig:clamp(5rem, 9.9vw, 15rem);
+  --headlineMedium:clamp(1rem, 2vw, 4rem);
+  --headlineSmall:clamp(0.6rem, 0.75vw, 1.3rem);
+  --spacing:clamp(0.9rem, 0.75vw, 1.3rem);
+}
+
+body{
+  background-color: var(--backgroundColor);
+}
+
+.hero__header{
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.scroll-section-outer{
+  overflow: hidden;
+}
+
+.scroll-section-inner{
+  height: 100vh;
+  width: 1200vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+
+.footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--headlineBig);
+  color: var(--primaryTextColor);
+}
+
+
+
+/*BUTTON ESTILOS Home_1*/
+.btn{
+  @apply w-60 h-16 rounded-lg my-4 border-black text-white cursor-pointer text-2xl
+}
+
+.img_home{
+ left: 4.5%;
+}
+
+.img_ancho{
+  width: 700px;
+ }
+
+/* estilos Home_2*/
+
+
+.rotation{
+   rotate: 135deg;
+}
+
+.Img-h2{
+  width: 200vw;
+  height: 400px;
+  left: -130px;
+}
+
+/* estilos Home_3*/
+.h3-esfera1{
+  left: 24%;
+  top: 53%;
+}
+.h3-esfera2{
+  left: 16%;
+  top: 90%;
+}
+
+/* estilos Title_1*/
+
+
+
+.esfera{
+  left: 32%;
+}
+.esferapc{
+  left: 34%;
+}
+
+/* ESTILO TITULOS gallery*/
+.styleTitle{
+  @apply bg-gradient-to-r from-green-400 to-green-700 rounded-tr-full
+}
+
+.styleTitle2{
+  @apply bg-gradient-to-r from-green-700 to-green-400 
+}
+.styleTitle1{
+  @apply bg-gradient-to-r from-green-400 to-green-700 
+}
+
+.esfera1{
+  left: 40%;
+}
+.esfera2{
+  left: 39%;
+}
+
+.img_gallery{
+  max-height: 250px ;
+}
+
+/* ESTILO TITULOS title_2*/
+
+
+ .esfera3{
+  left: 74%;
+}
+
+.Location{
+  background-color: var(--backgroundColor);
+}
+ 
+
